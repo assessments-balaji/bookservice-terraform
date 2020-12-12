@@ -41,6 +41,7 @@ gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cl
 EOF
 sudo yum install -y kubectl
 sudo curl -sSL https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | sudo bash
+sudo cp -p /usr/local/bin/helm /bin/
 # Install npm
 sudo su
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
