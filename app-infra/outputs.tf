@@ -26,7 +26,3 @@ output "cluster_name" {
 output "ecr_url" {
   value = aws_ecr_repository.book_service.repository_url
 }
-
-output "jenkins_ip_address" {
-  value = aws_instance.jenkins-instance.public_dns
-}
